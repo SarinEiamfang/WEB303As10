@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Form Enhancement and Validation</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>
+        Sarin Eiamfang
+    </h1>
+
+    <form id="form" action="#" method="post">
+        <Legend>Student Information</legend>
+            <div class="box">
+                <label for="username">Username: </label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="box">
+                <label for="password">Password: </label>
+                <input type="text" id="password" name="password" required>
+            </div>
+            <div class="box">
+                <label for="cfPassword">Confirm Password: </label>
+                <input type="password" id="cfPassword" name="cfPassword" required>
+            </div>
+            <div>
+                <input type="checkbox" id="tns" name="tns" />
+                <label for="tns">I accept the terms of service</label>
+            </div>
+            <div>
+              <label for="country">Country of Origin</label>
+              <select id="country" name="country">
+                <option value="" selected disabled>Please select your country</option>
+                </select>
+            </div>
+    
+            <input id="submit" type="submit" value="submit" />
+        </form>
+
+        <div id="welcomeMessage"></div>
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
